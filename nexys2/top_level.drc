@@ -1,0 +1,8 @@
+Release 14.2 Drc P.28xd (lin64)
+Copyright (c) 1995-2012 Xilinx, Inc.  All rights reserved.
+
+Sun Aug  5 05:03:07 2012
+
+drc -z top_level.ncd top_level.pcf
+
+DRC detected 0 errors and 0 warnings.

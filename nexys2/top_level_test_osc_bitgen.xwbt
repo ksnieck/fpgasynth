@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=/home/ksnieck/Dropbox/Projects/fpgasynth/nexys2/top_level_test_osc.ncd
+OUTFILE=/home/ksnieck/Dropbox/Projects/fpgasynth/nexys2/top_level_test_osc.bit
+FAMILY=Spartan3E
+PART=xc3s500e-4fg320
+WORKINGDIR=/home/ksnieck/Dropbox/Projects/fpgasynth/nexys2
+LICENSE=WebPack
+USER_INFO=202280605_0_0_116

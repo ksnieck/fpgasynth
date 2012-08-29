@@ -1,0 +1,5 @@
+set -tmpdir "/home/ksnieck/Dropbox/Projects/fpgasynth/nexys2/xst/projnav.tmp"
+set -xsthdpdir "/home/ksnieck/Dropbox/Projects/fpgasynth/nexys2/xst"
+elaborate
+-ifn midi_decoder.prj
+-ifmt mixed

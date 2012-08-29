@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=/home/ksnieck/Projects/fpgasynth/nexys2/top_level.ncd
+OUTFILE=/home/ksnieck/Projects/fpgasynth/nexys2/top_level.bit
+FAMILY=Spartan3E
+PART=xc3s500e-4fg320
+WORKINGDIR=/home/ksnieck/Projects/fpgasynth/nexys2
+LICENSE=WebPack
+USER_INFO=202280605_0_0_116

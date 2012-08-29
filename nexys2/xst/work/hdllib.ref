@@ -1,0 +1,16 @@
+PH utils NULL /home/ksnieck/Dropbox/Projects/fpgasynth/nexys2/utils.vhd sub00/vhpl00 1345842313
+AR test_osc rtl /home/ksnieck/Dropbox/Projects/fpgasynth/nexys2/test_osc.vhd sub00/vhpl13 1345842322
+AR top_level rtl /home/ksnieck/Dropbox/Projects/fpgasynth/nexys2/top_level.vhd sub00/vhpl07 1345842326
+AR sync_fifo rtl /home/ksnieck/Dropbox/Projects/fpgasynth/nexys2/sync_fifo.vhd sub00/vhpl03 1345842316
+EN top_level_test_osc NULL /home/ksnieck/Dropbox/Projects/fpgasynth/nexys2/top_level_test_osc.vhd sub00/vhpl14 1345153226
+AR top_level_test_osc rtl /home/ksnieck/Dropbox/Projects/fpgasynth/nexys2/top_level_test_osc.vhd sub00/vhpl15 1345153227
+AR i2s_cntrl rtl /home/ksnieck/Dropbox/Projects/fpgasynth/nexys2/I2S_cntrl.vhd sub00/vhpl11 1345842324
+AR uart rtl /home/ksnieck/Dropbox/Projects/fpgasynth/nexys2/uart.vhd sub00/vhpl05 1345842318
+AR midi_decoder rtl /home/ksnieck/Dropbox/Projects/fpgasynth/nexys2/midi_decoder.vhd sub00/vhpl09 1345842320
+EN i2s_cntrl NULL /home/ksnieck/Dropbox/Projects/fpgasynth/nexys2/I2S_cntrl.vhd sub00/vhpl10 1345842323
+EN sync_fifo NULL /home/ksnieck/Dropbox/Projects/fpgasynth/nexys2/sync_fifo.vhd sub00/vhpl02 1345842315
+PB utils utils /home/ksnieck/Dropbox/Projects/fpgasynth/nexys2/utils.vhd sub00/vhpl01 1345842314
+EN midi_decoder NULL /home/ksnieck/Dropbox/Projects/fpgasynth/nexys2/midi_decoder.vhd sub00/vhpl08 1345842319
+EN test_osc NULL /home/ksnieck/Dropbox/Projects/fpgasynth/nexys2/test_osc.vhd sub00/vhpl12 1345842321
+EN uart NULL /home/ksnieck/Dropbox/Projects/fpgasynth/nexys2/uart.vhd sub00/vhpl04 1345842317
+EN top_level NULL /home/ksnieck/Dropbox/Projects/fpgasynth/nexys2/top_level.vhd sub00/vhpl06 1345842325

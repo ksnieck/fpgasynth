@@ -1,0 +1,14 @@
+# CLock pin for Nexys2
+NET "clk" LOC = "B8";
+
+# Push buttons
+NET "btn<0>" LOC = "B18";
+
+# UART
+NET "rx" LOC = "U6";
+NET "tx" LOC = "P9";
+
+
+
+# MIDI
+NET "midi_rx

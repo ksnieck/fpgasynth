@@ -1,0 +1,21 @@
+# CLock pin for Nexys2
+NET "clk" LOC = "B8";
+
+# Push buttons
+NET "btn<0>" LOC = "B18";
+
+# switches
+NET "sw<0>" LOC = "G18";
+NET "sw<1>" LOC = "H18";
+NET "sw<2>" LOC = "K18";
+NET "sw<3>" LOC = "K17";
+NET "sw<4>" LOC = "L14";
+NET "sw<5>" LOC = "L13";
+NET "sw<6>" LOC = "N17";
+NET "sw<7>" LOC = "R17";
+
+# JA1
+NET "JA1" LOC = "L15";
+NET "JA2" LOC = "K12";
+NET "JA3" LOC = "L17";
+NET "JA4" LOC = "M15";
