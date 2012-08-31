@@ -11,4 +11,25 @@ NET "tx" LOC = "P9";
 
 
 # MIDI
-NET "midi_rx
+NET "midi_rx" LOC = "J13";
+NET "midi_thru" LOC = "M18";
+
+
+# JA1
+NET "dac_sdout" LOC = "L15";
+NET "dac_sclk" LOC = "K12";
+NET "dac_lrck" LOC = "L17";
+NET "dac_mclk" LOC = "M15";
+
+
+
+
+# Leds
+NET "Led<0>"  LOC = "J14"; # Bank = 1, Pin name = IO_L14N_1/A3/RHCLK7, Type = RHCLK/DUAL, Sch name = JD10/LD0
+NET "Led<1>"  LOC = "J15"; # Bank = 1, Pin name = IO_L14P_1/A4/RHCLK6, Type = RHCLK/DUAL, Sch name = JD9/LD1
+NET "Led<2>"  LOC = "K15"; # Bank = 1, Pin name = IO_L12P_1/A8/RHCLK2, Type = RHCLK/DUAL, Sch name = JD8/LD2
+NET "Led<3>"  LOC = "K14"; # Bank = 1, Pin name = IO_L12N_1/A7/RHCLK3/TRDY1, Type = RHCLK/DUAL, Sch name = JD7/LD3
+NET "Led<4>"  LOC = "E17"; # Bank = 1, Pin name = IO, Type = I/O, Sch name = LD4? s3e500 only
+NET "Led<5>"  LOC = "P15"; # Bank = 1, Pin name = IO, Type = I/O, Sch name = LD5? s3e500 only
+NET "Led<6>"  LOC = "F4";  # Bank = 3, Pin name = IO, Type = I/O, Sch name = LD6? s3e500 only
+NET "Led<7>"  LOC = "R4";  # Bank = 3, Pin name = IO/VREF_3, Type = VREF, Sch name = LD7? s3e500 only

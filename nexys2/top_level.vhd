@@ -46,7 +46,8 @@ entity top_level is
 		dac_lrck : out std_logic;
 		dac_mclk : out std_logic;
 		
-		midi_rx : in std_logic
+		midi_rx : in std_logic;
+		midi_thru : out std_logic
 	);
 end top_level;
 
@@ -77,11 +78,15 @@ begin
 
 	reset <= btn(0);
 	
-	led(0) <= not midi_rx;
-	led(1) <= midi_rx;
+	midi_thru <= midi_rx;
 	
-
-							
+	
+	led(0) <= midi_rx;
+	led(1) <= rx;
+	
+	led(2) <= uart_ef;
+	
+	led(7 downto 4) <= (others => '0');
 	
 	-- Core instatiations
 uart1 : entity work.uart
@@ -122,7 +127,8 @@ test_osc1 : entity work.test_osc
 		param_cmd	=> param_cmd,
 		param_val	=> param_val,
 		samp_clk		=> samp_clk,
-		dout 			=> samp_data
+		dout 			=> samp_data,
+		outen			=> led(3)
 	);
 	
 i2s_cntrl1 : entity work.I2S_cntrl
