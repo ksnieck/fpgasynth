@@ -1,5 +1,0 @@
-set -tmpdir "/home/ksnieck/Dropbox/Projects/fpgasynth/nexys2/xst/projnav.tmp"
-set -xsthdpdir "/home/ksnieck/Dropbox/Projects/fpgasynth/nexys2/xst"
-elaborate
--ifn I2S_cntrl.prj
--ifmt mixed

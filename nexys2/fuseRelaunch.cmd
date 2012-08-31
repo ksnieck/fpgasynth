@@ -1,1 +1,0 @@
--intstyle "ise" -incremental -o "/home/ksnieck/Dropbox/Projects/fpgasynth/nexys2/top_level_test_osc_tb_isim_beh.exe" -prj "/home/ksnieck/Dropbox/Projects/fpgasynth/nexys2/top_level_test_osc_tb_beh.prj" "work.top_level_test_osc_tb" 

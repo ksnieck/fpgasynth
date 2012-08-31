@@ -1,7 +1,0 @@
-vhdl work "utils.vhd"
-vhdl work "sync_fifo.vhd"
-vhdl work "uart.vhd"
-vhdl work "test_osc.vhd"
-vhdl work "midi_decoder.vhd"
-vhdl work "I2S_cntrl.vhd"
-vhdl work "top_level.vhd"

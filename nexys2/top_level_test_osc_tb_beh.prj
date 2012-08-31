@@ -1,4 +1,0 @@
-vhdl work "test_osc.vhd"
-vhdl work "I2S_cntrl.vhd"
-vhdl work "top_level_test_osc.vhd"
-vhdl work "top_level_test_osc_tb.vhd"

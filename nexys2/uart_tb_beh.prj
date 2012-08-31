@@ -1,4 +1,0 @@
-vhdl work "utils.vhd"
-vhdl work "sync_fifo.vhd"
-vhdl work "uart.vhd"
-vhdl work "uart_tb.vhd"
