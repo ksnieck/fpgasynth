@@ -73,6 +73,8 @@ architecture RTL of top_level is
 	
 	-- Samples
 	signal samp_data	: std_logic_vector(15 downto 0);
+
+	signal midiclk	: std_logic;
 	
 begin
 
@@ -81,8 +83,8 @@ begin
 	midi_thru <= midi_rx;
 	
 	
-	led(0) <= midi_rx;
-	led(1) <= rx;
+	led(0) <= not midi_rx;
+	led(1) <= midiclk;
 	
 	led(2) <= uart_ef;
 	
@@ -116,7 +118,8 @@ midi_decoder1 : entity work.midi_decoder
 		nrdy 			=> uart_ef,
 		clk 			=> clk,
 		reset 		=> reset,
-		midi_chan 	=> "0001",
+		midi_chan 	=> "0000",
+		midiclk		=> midiclk,
 		param_cmd 	=> param_cmd,
 		param_val 	=> param_val
 	);
