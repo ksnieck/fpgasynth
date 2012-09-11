@@ -110,22 +110,92 @@ BEGIN
    end process;
  
 
-   -- Stimulus process
-   stim_proc: process
-   begin		
-      -- hold reset state for 100 ns.
-      wait for 100 ns;	
+	-- Stimulus process
+	stim_proc: process
+	begin		
+		-- hold reset state for 100 ns.
+		wait for 100 ns;	
+		
+		btn <= (others => '0');
+		sw <= (others => '0');
+		rx <= '1';
+		midi_rx <= '1';
 
 		btn(0) <= '1'; -- reset
-      wait for clk_period*10;
-      
-      -- stop reset state
-      btn(0) <= '0';
-      
-      
-      
+		wait for clk_period*10;
+
+	  	-- stop reset state
+		btn(0) <= '0';
+
 		-- Send a midi packet
+		wait for 32 us;
+		midi_rx <= '0'; -- Start bit
+		wait for 32 us;
+		midi_rx <= '0'; -- Bit 0
+		wait for 32 us;
+		midi_rx <= '0'; -- bit 1
+		wait for 32 us;
+		midi_rx <= '0'; -- bit 2
+		wait for 32 us;
+		midi_rx <= '0'; -- bit 3 -- Note on
+		wait for 32 us;
+		midi_rx <= '1'; -- bit 4
+		wait for 32 us;
+		midi_rx <= '0'; -- bit 5
+		wait for 32 us;
+		midi_rx <= '0'; -- bit 6
+		wait for 32 us;
+		midi_rx <= '1'; -- bit 7
+		wait for 32 us;
+		midi_rx <= '1'; -- stop bit
+		wait for 32 us;
 		
+		-- Send a midi packet
+		midi_rx <= '0'; -- Start bit
+		wait for 32 us;
+		midi_rx <= '1'; -- Bit 0 - Note 69
+		wait for 32 us;
+		midi_rx <= '0'; -- bit 1
+		wait for 32 us;
+		midi_rx <= '1'; -- bit 2
+		wait for 32 us;
+		midi_rx <= '0'; -- bit 3 
+		wait for 32 us;
+		midi_rx <= '0'; -- bit 4
+		wait for 32 us;
+		midi_rx <= '0'; -- bit 5
+		wait for 32 us;
+		midi_rx <= '1'; -- bit 6
+		wait for 32 us;
+		midi_rx <= '0'; -- bit 7
+		wait for 32 us;
+		midi_rx <= '1'; -- stop bit
+		wait for 32 us;
+		
+	
+		-- Send a midi packet
+		midi_rx <= '0'; -- Start bit
+		wait for 32 us;
+		midi_rx <= '1'; -- Bit 0 - Full velocity
+		wait for 32 us;
+		midi_rx <= '1'; -- bit 1
+		wait for 32 us;
+		midi_rx <= '1'; -- bit 2
+		wait for 32 us;
+		midi_rx <= '1'; -- bit 3 
+		wait for 32 us;
+		midi_rx <= '1'; -- bit 4
+		wait for 32 us;
+		midi_rx <= '1'; -- bit 5
+		wait for 32 us;
+		midi_rx <= '1'; -- bit 6
+		wait for 32 us;
+		midi_rx <= '0'; -- bit 7
+		wait for 32 us;
+		midi_rx <= '1'; -- stop bit
+		wait for 32 us;
+		
+
 		
 
       -- insert stimulus here 
